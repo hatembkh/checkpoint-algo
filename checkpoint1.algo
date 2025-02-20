@@ -1,22 +1,22 @@
 ALGORITHM sentence
 VAR
     phr: string;
-    i,k,length: number;
+    i,k,: number;
 BEGIN
     write("ecrire ton phrase avec un point :");
     read(phr);
-phr.length;
-    IF (phr[length]:=".") THEN
-        write("il y a",length,"mots dans la phrase");
+    phr.length;
+    IF (phr[phr.length]:=".") THEN
+        write("il y a",phr.length,"mots dans la phrase");
     ELSE
         write("ecrire ton phrase avec un point:");
     END_IF
-    FOR k FROM 1 TO length STEP ++  DO
+    FOR k FROM 1 TO phr.length STEP ++  DO
         if (phr[i]=" ") THEN
             write("il y a",i,"mots dans la phrase");
         END_IF
     END_FOR
-    FOR i FROM 1 TO length STEP ++  DO
+    FOR i FROM 1 TO phr.length STEP ++  DO
         IF (phr[i]:=e or phr[i]:=o or phr[i]:=i or phr[i]:=a or phr[i]:=u) THEN
             write("il y a",i,"voyelles dans la phrase");
         ELSE
